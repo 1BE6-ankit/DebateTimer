@@ -5,15 +5,15 @@ This is a great app that runs on the browser. It can be very useful for debates 
 ####This app requires PHP and a browser :) 
 First the quiz-master loads _DebateTimer/admin.php_ in his/her computer which. The admin page looks like this:
 
-![Admin Control Panel] (/readmeFiles/)
+![Admin Control Panel] (/readmeFiles/admin1.png)
 
 Then the quiz-master types the name of the player and chooses the motion and sends the players to be dislayed
-![Admin Control Panel] (/readmeFiles/)
+![Admin Control Panel] (/readmeFiles/admin2.png)
 
 Likewise, there is another interface in the timer part.
 To project the timer the other computers are to load _DebateTimer/index.html_ and the following page is displayed:
 
-[!Timer] (/readmeFiles/)
+[!Timer] (/readmeFiles/client1.png)
 
 Initially no users are playing so an empty timer is displayed. But as the quiz-master sends the players, the timer starts and the screen gets updated to:
-![Running timer with the Player Name shown] (/readmeFiles/)
+![Running timer with the Player Name shown] (/readmeFiles/client2.png)
