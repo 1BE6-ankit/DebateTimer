@@ -1,0 +1,123 @@
+body {
+    background: rgba(150, 150, 150, 0.8);
+    font-size: 2em;
+}
+
+.timer-box {
+    top: 50px;
+    margin: 10px auto;
+    width: 300px;
+    position: relative;
+}
+
+#seconds {
+    fill: #15ad15;
+}
+
+#mainCircle {
+    fill: #fff;
+    stroke: #15ad15;
+    stroke-width: 18;
+    stroke-dashoffset: 0;
+}
+
+#ghostCircle {
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 18;
+}
+
+.circle {
+    /*    margin: 25% 20%;*/
+    height: 350px;
+    width: 320px;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.19);
+    position: absolute;
+    margin: auto;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+svg {
+    margin-top: 5%;
+    height: 290px;
+    margin-left: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.main-container {
+    margin: auto;
+}
+
+.some-button {
+    background-color: crimson;
+    color: black;
+    /*    margin-top: 5px;*/
+    padding: 10px;
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+.some-button:hover {
+    background-color: white;
+    color: teal;
+}
+
+#send-button {
+    display: inline-block;
+    width: 200px;
+    margin-left: 5px;
+    font-size: 0.7em;
+}
+
+.player-text {
+    font-size: 1.2em;
+}
+
+.hand-cursor {
+    cursor: pointer;
+}
+
+.eachUser {
+    margin: 1px 0px;
+    background: cadetblue;
+    color: black;
+    padding: 7px;
+    border: 2px solid black;
+    display: block;
+}
+
+#score-controls {
+    margin: 15% 50px;
+    padding: 5px;
+    border: 1px solid #111;
+    width: 80%;
+}
+
+select {
+    width: 50%;
+    margin: auto;
+    padding: 10px 10px;
+    border: 1px solid black;
+    display: block;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+.main-name {
+    color: darkred;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+#over-time {
+    color: red;
+    margin-top: 105%;
+    margin-left: 25px;
+}
