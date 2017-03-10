@@ -1,6 +1,7 @@
 # DebateTimer
-Timer for Debates where the Timer can be displayed in multiple computers(projectors) and the quiz master can control the timer from another computer
-This is a great app that runs on the browser. It can be very useful for debates where a timer is to be displayed in multiple positions. Different screens or projectors can be placed where the timer is to be displayed and the admin(Quiz-Master) can control the items to be displayed on the screen (Name, For/Against). 
+Timer for Debates where the Timer can be displayed in multiple computers(projectors) and the quiz master can control the timer from another computer.
+
+This is very useful for debates where a timer is to be displayed in multiple screens or projectors. The admin(Quiz-Master) controls the items to be displayed on the screen (Name, For/Against) and the information is synced accross the connected computers on LAN where the timer together with the player name and motion to the debate is displayed. 
 
 ####This app requires PHP and a browser :) 
 First the quiz-master loads _DebateTimer/admin.php_ in his/her computer which. The admin page looks like this:
