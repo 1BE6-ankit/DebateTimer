@@ -34,7 +34,7 @@ $(document).ready(function () {
 
         ++playerNumber;
         $.ajax({
-            url: rootLocation + 'php/update_player.php',
+            url: '/php/update_player.php',
             type: 'post',
             data: {
                 user_name: name,
