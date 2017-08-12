@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="assets/bootstrap.min.css">
         <link rel="stylesheet" href="assets/animate.css">
-	<link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css">
 
         <script src="js/admin.js"></script>
 
@@ -27,39 +27,47 @@
 
         <div class="container">
             <div class="row">
-                <div id="score-controls" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 load-and-send">
-                    <div class='eachUser col-xs-12 col-sm-12 col-md-12 col-lg-12'>
-                        <span class='col-xs-6 col-sm-6 col-md-6 col-lg-4 player-text'>  Player Name  </span>
-                        <input type='text' class='col-xs-6 col-sm-6 col-md-6 col-lg-4 name-field'>
-                        <button id='send-button' class='col-xs-12 col-sm-12 col-md-12 col-lg-4 btn btn-primary'>
-            Send Player
-        </button>
-                    </div>
-                    <form>
-                        <select>
-                        <option selected="selected">For</option>
-                        <option>Against</option>
-                    </select>
-                    </form>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"></div>
 
-                    <div class="row">
-                        <div id="conformButton" class="some-button hand-cursor animated shake">
-                            Proceed?
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 input-box-wrapper animated pulse">
+                    <h2 id="info-header">Debate Timer</h2>
+                    <div id="score-controls" class="load-and-send">
+
+                        <div class="form-group">
+                            <label class="label-name">Name</label>
+                            <div class="col-10">
+                                <input type="text" class="form-control name-field" placeholder="">
+                            </div>
+                        </div>
+
+                        <form>
+                            <select>
+                                <option selected="selected">For</option>
+                                <option>Against</option>
+                            </select>
+                        </form>
+                        <button id='send-button' class='btn btn-success'>
+                            OK
+                        </button>
+
+                        <div class="row">
+                            <div id="conformButton" class="some-button hand-cursor animated shake">
+                                Proceed?
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"></div>
             </div>
 
 
             <div class="row">
-                <div id="timerStop" class="some-button hand-cursor">
+                <div id="timerStop" class="some-button hand-cursor animated bounceIn">
                     STOP
                 </div>
-
             </div>
         </div>
-
-
 
     </body>
 

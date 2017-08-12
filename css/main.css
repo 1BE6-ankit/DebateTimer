@@ -1,5 +1,5 @@
 body {
-    background: rgba(150, 150, 150, 0.8);
+    background-color: #f9f9f9;
     font-size: 2em;
 }
 
@@ -57,23 +57,28 @@ h1 {
     color: black;
     /*    margin-top: 5px;*/
     padding: 10px;
-    width: 50%;
+    width: 80%;
     margin: 10px auto;
     text-align: center;
     border-radius: 5px;
     font-size: 1.5em;
+    transition: all 0.5s ease;
 }
 
 .some-button:hover {
-    background-color: white;
+    background-color: #a70000;
     color: teal;
+    color: white;
+    transition: all 1s ease;
 }
 
 #send-button {
-    display: inline-block;
+    display: block;
     width: 200px;
-    margin-left: 5px;
-    font-size: 0.7em;
+    margin: 10px auto;
+    font-size: 1.2em;
+    padding: 10px;
+    color: white;
 }
 
 .player-text {
@@ -84,20 +89,17 @@ h1 {
     cursor: pointer;
 }
 
-.eachUser {
-    margin: 1px 0px;
-    background: cadetblue;
+#score-controls {
+    /*margin: 15% auto;*/
+    padding: 20px;
+    border: 1px solid #d8dee2;
+    background: #fff;
+    border-radius: 5px;
     color: black;
-    padding: 7px;
-    border: 2px solid black;
-    display: block;
 }
 
-#score-controls {
-    margin: 15% 50px;
-    padding: 5px;
-    border: 1px solid #111;
-    width: 80%;
+.input-box-wrapper {
+    margin: 7% auto;
 }
 
 select {
@@ -120,4 +122,18 @@ select {
     color: red;
     margin-top: 105%;
     margin-left: 25px;
+}
+
+.name-field {
+    font-size: 1.2em;
+    height: 1.8em;
+}
+
+.label-name {
+    font-size: 1.1em;
+}
+
+#info-header {
+    text-align: center;
+    line-height: 40px;
 }

@@ -26,7 +26,7 @@ $(document).ready(function() {
         name = $(".name-field").val(); //value of points from the input field to increase the point
         motion = $("select").val();
 
-        $("#score-controls").hide();
+        $(".input-box-wrapper").hide();
         $("#timerStop").show();
 
         potentialDifference = 1; // since admin has registered new user, data is to be sent to client
@@ -49,9 +49,10 @@ $(document).ready(function() {
     });
 
     $("#timerStop").click(function() {
-        $("#score-controls").show();
+        $(".input-box-wrapper").show();
         $("#timerStop").hide();
         $("#conformButton").hide();
+
 
         potentialDifference = 0; //since stop is pressed, timer is to stopped
         $.ajax({
