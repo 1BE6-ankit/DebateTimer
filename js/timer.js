@@ -7,8 +7,7 @@ var rootLocation = "";
 var activityTimer, contentTimer;
 var callSec = 500; //millisec to call the change in activities
 
-var activityNumber = 0,
-    playerNumber = 0;
+var dataReceived = false; // initially no user_name and motion are received
 
 var offsetValue,
     offsetValueCounter,
@@ -92,17 +91,17 @@ function playerContent() {
         url: rootLocation + 'php/player.php',
         async: true,
         data: {
-            player_number: playerNumber,
-            activity_number: activityNumber,
+            data_received: dataReceived
         },
         cache: false,
         success: function(data) {
+            // alert(dataReceived);
             console.log(data);
             console.log("inside player content");
-            if (data) {
+            if (data && dataReceived == false) {
+                dataReceived = true;
                 $("#over-time").hide();
                 $("#user-name").html(data);
-                ++playerNumber;
 
                 //code to set the timer
                 overTime = 0;
@@ -133,13 +132,12 @@ function getActivities() {
         url: rootLocation + 'php/player.php',
         async: true,
         data: {
-            activity_number: activityNumber,
-            player_number: playerNumber
+            data_received: dataReceived
         },
         cache: false,
         success: function(data) {
             if (data) {
-                ++activityNumber;
+                dataReceived = false;
 
                 $("#seconds").css({
                     'fill': '#15ad15',

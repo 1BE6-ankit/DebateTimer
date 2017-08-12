@@ -1,7 +1,6 @@
 <?php
     $client_array['user_name'] = "";
-    $client_array['player_number'] = 0;
-    $client_array['activity_number'] = 0;
+    $client_array['potential_difference'] = 0;
     $client_array['motion'] = "For";
     file_put_contents("json/client.json", json_encode($client_array));
 ?>

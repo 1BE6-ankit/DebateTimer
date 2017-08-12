@@ -5,9 +5,7 @@
 var rootLocation = "";
 
 
-
-var activityNumber = 0;
-var playerNumber = 0;
+var potentialDifference = 0; // no difference ,means data is not to be sent to client
 var name, motion;
 
 $(document).ready(function() {
@@ -31,14 +29,13 @@ $(document).ready(function() {
         $("#score-controls").hide();
         $("#timerStop").show();
 
-        ++playerNumber;
+        potentialDifference = 1; // since admin has registered new user, data is to be sent to client
         $.ajax({
             url: rootLocation + 'php/update_player.php',
             type: 'post',
             data: {
                 user_name: name,
-                player_number: playerNumber,
-                activity_number: activityNumber,
+                potential_difference: potentialDifference,
                 motion: motion
             },
             async: true,
@@ -56,14 +53,13 @@ $(document).ready(function() {
         $("#timerStop").hide();
         $("#conformButton").hide();
 
-        ++activityNumber;
+        potentialDifference = 0; //since stop is pressed, timer is to stopped
         $.ajax({
             url: rootLocation + 'php/update_player.php',
             type: 'post',
             data: {
                 user_name: name,
-                player_number: playerNumber,
-                activity_number: activityNumber,
+                potential_difference: potentialDifference,
                 motion: motion
             },
             async: true,
