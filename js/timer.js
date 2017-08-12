@@ -1,10 +1,8 @@
-
-
 /* Our php files are in php folder inside the main projects Folder. To access the files we need to specify the full path to 
     the php folder. So the default name for the Project is DebateTimer and this name may be changed. So the name of the file is stored 
     inside rootFile.json and the name of the project is stored there    
 */
-var rootLocation;
+var rootLocation = "";
 
 var activityTimer, contentTimer;
 var callSec = 500; //millisec to call the change in activities
@@ -71,11 +69,11 @@ function progressTime() {
 }
 
 
-$(document).ready(function () {
+$(document).ready(function() {
 
     // get the name of the project folder so that other php files can be accessed while making AJAX requests
-    $.getJSON("js/rootFile.json", function(file){
-        rootLocation  = file.projectName;
+    $.getJSON("js/rootFile.json", function(file) {
+        rootLocation = file.projectName;
     });
 
     var radius = 120; //radius of the cirlce
@@ -98,7 +96,8 @@ function playerContent() {
             activity_number: activityNumber,
         },
         cache: false,
-        success: function (data) {
+        success: function(data) {
+            console.log(data);
             console.log("inside player content");
             if (data) {
                 $("#over-time").hide();
@@ -113,8 +112,13 @@ function playerContent() {
                 timerCalls = 0;
 
                 clearInterval(contentTimer);
+                contentTimer = undefined;
                 setActivities();
             }
+        },
+        errror: function(jqXHR, exception) {
+            alert(jqXHR.responseText);
+            alert("Error while getting player content");
         }
     });
 }
@@ -133,7 +137,7 @@ function getActivities() {
             player_number: playerNumber
         },
         cache: false,
-        success: function (data) {
+        success: function(data) {
             if (data) {
                 ++activityNumber;
 
@@ -153,19 +157,25 @@ function getActivities() {
                 });
 
                 clearInterval(activityTimer);
+                activityTimer = undefined;
                 setPlayerContent();
             }
+        },
+        errror: function(jqXHR, exception) {
+            alert(jqXHR.responseText);
+            alert("Error while getting activity state of the timer");
         }
     });
 }
 
 function setPlayerContent() {
-    contentTimer = setInterval('playerContent()', callSec);
+    clearInterval(contentTimer);
+    contentTimer = setInterval(playerContent, callSec);
 }
 setPlayerContent();
 
-
-
 function setActivities() {
-    activityTimer = setInterval('getActivities()', callSec);
+    clearInterval(activityTimer);
+    activityTimer = setInterval(getActivities, callSec);
+    clearInterval(contentTimer);
 }

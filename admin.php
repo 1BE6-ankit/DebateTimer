@@ -38,7 +38,7 @@
                     </div>
                     <form>
                         <select>
-                        <option>For</option>
+                        <option selected="selected">For</option>
                         <option>Against</option>
                     </select>
                     </form>
