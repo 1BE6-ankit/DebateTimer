@@ -1,7 +1,7 @@
 <?php
     $client_array['user_name'] = "";
     $client_array['potential_difference'] = 0;
-    $client_array['motion'] = "For";
+    $client_array['motion'] = "for";
     file_put_contents("json/client.json", json_encode($client_array));
 ?>
 
@@ -42,8 +42,8 @@
 
                         <form>
                             <select>
-                                <option selected="selected">For</option>
-                                <option>Against</option>
+                                <option selected="selected">for</option>
+                                <option>against</option>
                             </select>
                         </form>
                         <button id='send-button' class='btn btn-success'>

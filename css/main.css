@@ -4,9 +4,8 @@ body {
 }
 
 .timer-box {
-    top: 50px;
-    margin: 10px auto;
-    width: 300px;
+    margin: 5% auto;
+    width: 320px;
     position: relative;
 }
 
@@ -32,24 +31,16 @@ body {
     height: 350px;
     width: 320px;
     border-radius: 7px;
-    background-color: rgba(0, 0, 0, 0.19);
+    background-color: #ccc;
+    /*border: 1px solid #bbb;*/
     position: absolute;
-    margin: auto;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+    /*box-shadow: 2px 2px rgba(0, 0, 0, 0.3);*/
 }
 
 svg {
     margin-top: 5%;
     height: 290px;
     margin-left: 10px;
-}
-
-h1 {
-    text-align: center;
-}
-
-.main-container {
-    margin: auto;
 }
 
 .some-button {
@@ -103,10 +94,10 @@ h1 {
 }
 
 select {
-    width: 50%;
+    /*width: 50%;*/
     margin: auto;
-    padding: 10px 10px;
-    border: 1px solid black;
+    padding: 8px 8px;
+    border: 1px solid #bbb;
     display: block;
     border-radius: 4px;
     background-color: #f1f1f1;
@@ -116,12 +107,25 @@ select {
     color: darkred;
     font-size: 1.5em;
     text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.motion-name{
+    display: inline-block;
+    /*font-weight: bolder;*/
+}
+
+#name-and-motion {
+    text-align: center;
 }
 
 #over-time {
     color: red;
-    margin-top: 105%;
-    margin-left: 25px;
+    margin-top: 95%;
+    /*margin-left: 25px;*/
+    text-align: center;
+    font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .name-field {
@@ -130,13 +134,15 @@ select {
 }
 
 .label-name {
-    font-size: 1.1em;
+    font-size: 1em;
+    font-weight: 400;
+    color:#666;
 }
 
 #info-header {
     text-align: center;
     line-height: 1.5;
-    font-weight: 200;
+    font-weight: 300;
     letter-spacing: -1px;
     color: #333;
     word-wrap: break-word;

@@ -53,8 +53,7 @@ $(document).ready(function() {
         $("#timerStop").hide();
         $("#conformButton").hide();
 
-
-        potentialDifference = 0; //since stop is pressed, timer is to stopped
+        potentialDifference = 0; //since stop is pressed, timer is to be stopped
         $.ajax({
             url: rootLocation + 'php/update_player.php',
             type: 'post',

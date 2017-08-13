@@ -101,7 +101,7 @@ function playerContent() {
             if (data && dataReceived == false) {
                 dataReceived = true;
                 $("#over-time").hide();
-                $("#user-name").html(data);
+                $("#name-and-motion").html(data);
 
                 //code to set the timer
                 overTime = 0;
@@ -123,7 +123,7 @@ function playerContent() {
 }
 
 function getActivities() {
-    console.log("in activies");
+    console.log("in activities");
     if (++timerCalls % 2 == 0)
         startTimer();
 
