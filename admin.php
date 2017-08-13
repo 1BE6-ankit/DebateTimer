@@ -27,9 +27,9 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"></div>
+                <div class="col-xs-1 col-sm-3 col-md-3 col-lg-3"></div>
 
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 input-box-wrapper animated pulse">
+                <div class="col-xs-10 col-sm-6 col-md-6 col-lg-6 input-box-wrapper animated pulse">
                     <h2 id="info-header">Debate Timer</h2>
                     <div id="score-controls" class="load-and-send">
 
@@ -58,7 +58,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"></div>
+                <div class="col-xs-1 col-sm-3 col-md-3 col-lg-3"></div>
             </div>
 
 

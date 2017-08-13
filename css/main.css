@@ -99,7 +99,7 @@ h1 {
 }
 
 .input-box-wrapper {
-    margin: 7% auto;
+    margin: 5% auto;
 }
 
 select {
@@ -135,5 +135,11 @@ select {
 
 #info-header {
     text-align: center;
-    line-height: 40px;
+    line-height: 1.5;
+    font-weight: 200;
+    letter-spacing: -1px;
+    color: #333;
+    word-wrap: break-word;
+    font-family: "Segoe UI";
+
 }
