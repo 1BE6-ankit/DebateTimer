@@ -3,8 +3,6 @@ Timer for Debates where the Timer can be displayed in multiple computers(project
 
 This app is very useful for debates where a timer is to be displayed in multiple screens or projectors. The admin(Quiz-Master) controls the items to be displayed on the screen (Name, For/Against) and the information is synced accross the connected computers on LAN where the timer together with the relevant information is displayed. 
 
-#### This app requires PHP and a browser :) 
-
 ### Admin Side
 Firstly, the quiz-master loads _DebateTimer/admin.php_ in his/her computer. The admin page looks like this:
 
